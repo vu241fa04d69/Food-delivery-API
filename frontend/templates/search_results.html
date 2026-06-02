@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+    
+</head>
+<body>
+
+<h1 style="text-align:center; margin:30px;">
+    Search Results for "{{ query }}"
+</h1>
+
+<div class="card-container">
+
+    {% for food in foods %}
+
+    <div class="card">
+
+        <h2>Pizza</h2>
+        <h2>Biryani</h2>
+        <h2>Noodles</h2>
+        <h2>Veg Rice</h2>
+
+        <p>₹200</p>
+        <p>₹300</p>
+        <p>₹100</p>
+        <p>₹80</p>
+
+    </div>
+
+    {% endfor %}
+
+</div>
+
+{% if foods|length == 0 %}
+
+<h2 style="text-align:center;">
+    No food found
+</h2>
+
+{% endif %}
+
+</body>
+</html>
