@@ -89,6 +89,26 @@ input{
     cursor:pointer;
 }
 
+.error-message,
+.success-message,
+.auth-link{
+    margin-bottom:15px;
+    text-align:center;
+}
+
+.error-message{
+    color:#d63031;
+}
+
+.success-message{
+    color:#00b894;
+}
+
+.auth-link a{
+    color:#0984e3;
+    font-weight:bold;
+}
+
 table{
     width:100%;
     border-collapse:collapse;
